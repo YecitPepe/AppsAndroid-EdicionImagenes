@@ -1,1 +1,187 @@
-<h1>Hello world</h1>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Apps de edición de imagen - [Tu Marca]</title>
+  <meta name="description" content="Colección de apps de edición de imagen. Descarga o visita en Google Play Store." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#4f46e5;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#071020 0%,#081427 100%);color:#e6eef8;line-height:1.4}
+    .container{max-width:1100px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    .hero{display:flex;align-items:center;justify-content:space-between;margin:28px 0;padding:20px;background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent);border-radius:12px}
+    .hero-left{max-width:64%}
+    .cta{margin-top:14px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-top:22px}
+    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 4px 18px rgba(4,6,12,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .card .thumb{height:160px;border-radius:8px;background:var(--glass);display:flex;align-items:center;justify-content:center;margin-bottom:12px;overflow:hidden}
+    .card h3{margin:0 0 6px;font-size:16px}
+    .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+    .badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+    .badge{font-size:12px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.03)}
+    .actions{display:flex;gap:8px}
+
+    footer{margin-top:34px;padding:16px 0;color:var(--muted);font-size:13px;text-align:center}
+
+    /* modal simple */
+    .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,0.7);z-index:40}
+    .modal.open{display:flex}
+    .modal .box{background:#071426;padding:18px;border-radius:10px;max-width:920px;width:94%}
+    .screens{display:flex;gap:8px;overflow:auto}
+    .screens img{height:360px;border-radius:8px}
+
+    /* responsive */
+    @media(max-width:800px){
+      .hero{flex-direction:column;align-items:flex-start}
+      .hero-left{max-width:100%}
+    }
+
+    /* small helper */
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">IM</div>
+        <div>
+          <h1>[Tu Marca] — Apps de edición</h1>
+          <p class="lead">Colección de aplicaciones para editar fotos. Solo apps de edición.</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn btn-ghost" href="#contact">Contacto</a>
+        <a class="btn btn-ghost" href="#privacidad">Privacidad</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Publica tus apps en Play Store desde aquí</h2>
+        <p class="muted">Página central para listar todas tus apps de edición. Incluye capturas, descripción y enlaces a Google Play.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#apps">Ver Apps</a>
+          <a class="btn btn-ghost" href="#instrucciones">Instrucciones</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div style="width:220px;height:140px;background:linear-gradient(135deg,#0b1b2b,#052034);border-radius:12px;display:flex;align-items:center;justify-content:center">
+          <div class="muted">Imagen / Mockup</div>
+        </div>
+      </div>
+    </section>
+
+    <main id="apps">
+      <div class="grid">
+        <!-- Repetir este bloque por cada app. Reemplaza datos entre {{}} -->
+
+        <article class="card">
+          <div class="thumb"><img src="/ruta/a/captura_app1.jpg" alt="Captura App 1" style="width:100%;height:100%;object-fit:cover"></div>
+          <h3>App Nombre 1</h3>
+          <div class="meta">Editor de fotos rápido con filtros y recorte</div>
+          <div class="badges">
+            <span class="badge">Android</span>
+            <span class="badge">Gratis</span>
+            <span class="badge">Sin anuncios</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.tuapp.app1" target="_blank" rel="noopener">Ver en Play Store</a>
+            <button class="btn btn-ghost" data-screens='["/ruta/a/shot1.jpg","/ruta/a/shot2.jpg"]' onclick="openModal(this)">Capturas</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><img src="/ruta/a/captura_app2.jpg" alt="Captura App 2" style="width:100%;height:100%;object-fit:cover"></div>
+          <h3>App Nombre 2</h3>
+          <div class="meta">Herramientas avanzadas: máscaras, capas y mezcla</div>
+          <div class="badges">
+            <span class="badge">Android</span>
+            <span class="badge">Pago</span>
+            <span class="badge">Soporte HDR</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.tuapp.app2" target="_blank" rel="noopener">Ver en Play Store</a>
+            <button class="btn btn-ghost" data-screens='["/ruta/a/shot3.jpg","/ruta/a/shot4.jpg"]' onclick="openModal(this)">Capturas</button>
+          </div>
+        </article>
+
+        <!-- Añade más cards aquí -->
+
+      </div>
+
+      <section id="instrucciones" style="margin-top:26px;padding:14px;background:rgba(255,255,255,0.01);border-radius:10px">
+        <h3>Instrucciones rápidas</h3>
+        <ol class="muted">
+          <li>Reemplaza los src de las imágenes por las rutas reales o URLs públicas.</li>
+          <li>Actualiza los enlaces de Play Store en cada botón "Ver en Play Store".</li>
+          <li>Comprueba que las capturas cumplan con los requisitos de Google Play.</li>
+          <li>Sube este archivo a tu hosting y añade el dominio en la Play Console si es necesario.</li>
+        </ol>
+      </section>
+
+      <section id="privacidad" style="margin-top:18px">
+        <h4>Política de privacidad</h4>
+        <p class="muted">Incluye aquí un enlace a tu política de privacidad si tus apps recogen datos. Es obligatorio para publicar en Google Play si las apps procesan datos personales.</p>
+      </section>
+
+      <section id="contact" style="margin-top:18px">
+        <h4>Contacto</h4>
+        <p class="muted">Correo: developer@tu-dominio.com</p>
+      </section>
+
+    </main>
+
+    <footer>
+      © <span id="year"></span> [Tu Marca]. Todas las apps son propiedad del desarrollador.
+    </footer>
+  </div>
+
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="box" role="dialog" aria-modal="true">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <strong>Capturas</strong>
+        <button onclick="closeModal(event)" class="btn btn-ghost">Cerrar</button>
+      </div>
+      <div class="screens" id="screens"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function openModal(btn){
+      var raw = btn.getAttribute('data-screens')||'[]';
+      try{
+        var arr = JSON.parse(raw);
+      }catch(e){var arr = []}
+      var container = document.getElementById('screens');
+      container.innerHTML = '';
+      if(arr.length===0){container.innerHTML = '<div class="muted">No hay capturas configuradas.</div>'}
+      arr.forEach(function(src){
+        var img = document.createElement('img');
+        img.src = src; img.alt = 'Captura';
+        container.appendChild(img);
+      });
+      document.getElementById('modal').classList.add('open');
+    }
+    function closeModal(e){
+      if(e.target.id==='modal' || e.target.tagName==='BUTTON'){
+        document.getElementById('modal').classList.remove('open');
+      }
+    }
+  </script>
+</body>
+</html>
+
