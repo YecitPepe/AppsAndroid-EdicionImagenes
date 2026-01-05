@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Removedor de Fondo IA APK Android - YecitDev</title>
+  <meta name="description" content="Elimina el fondo de personas automáticamente con IA. Segmentación precisa de rostro, cuerpo y ropa usando tecnología MediaPipe. 100% offline y privado." />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="config.js"></script>
+
+  <script type="application/ld+json" id="schema-ia"></script>
+  <link rel="icon" type="image/png" href="Images/icons/favicon.png">
+</head>
+<body>
+  <header class="mobile-header" id="mobileHeader">
+    <div class="mobile-title">
+      <h1 id="mobile-app-title">Removedor de Fondo con IA</h1>
+      <p class="lead">Segmentación inteligente en Android</p>
+    </div>
+    <button class="menu-toggle" id="menuToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-menu-content">
+      <div class="mobile-menu-section">
+        <h3>Menú Principal</h3>
+        <ul>
+          <li><a href="index.html">Página principal</a></li>
+        </ul>
+      </div>
+      
+      <div class="mobile-menu-section">
+        <h3>Otras aplicaciones</h3>
+        <div id="mobile-apps-list"></div>
+      </div>
+      
+      <div class="mobile-support-section">
+        <h3>Apóyanos</h3>
+        <div id="mobile-support-links"></div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-container" id="mainContainer">
+    <aside class="sidebar desktop-only">
+      <h3>Menú Principal</h3>
+      <ul>
+        <li><a href="index.html">Página principal</a></li>
+      </ul>
+      <h3>Otras aplicaciones</h3>
+      <div id="apps-list"></div>
+    </aside>
+
+    <div class="main-content">
+      <div class="desktop-header desktop-only">
+        <div class="header-content">
+          <h1><span id="app-nombre-header">Removedor fondo de Personas</span> <span class="gradient-text">APK Android</span></h1>
+          <p class="lead">Eliminación de fondo con MediaPipe</p>
+        </div>
+        <a href="mailto:pplunavelasco@gmail.com" title="Contacto" class="contact-btn">
+          <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'></path><polyline points='22,6 12,13 2,6'></polyline></svg>
+        </a>
+      </div>
+
+      <section class="card app-showcase">
+        <img id="app-imagen" src="" alt="App Preview" class="hero">
+        <div class="download-section">
+          <a id="app-playstore" class="btn" href="#" target="_blank" rel="noopener">
+            📱 Descargar en Google Play
+          </a>
+        </div>
+        <ul class="details-list" style="margin-top:24px;">
+          <li><strong>Nombre APK:</strong> <span id="app-nombre"></span></li>
+		  <li><strong>Funcion:</strong> <span id="app-funcion"></span></li>
+          <li><strong>Versión:</strong> <span id="app-version"></span></li>
+          <li><strong>Compatibilidad:</strong> <span id="app-compatibilidad"></span></li>
+          <li><strong>Licencia:</strong> <span id="app-licencia"></span></li>
+          <li><strong>Permisos:</strong> <span id="app-permisos"></span></li>
+          <li><strong>Última actualización:</strong> <span id="app-actualizacion"></span></li>
+          <li><strong>Política de privacidad:</strong> <a id="app-privacidad" target="_blank" rel="noopener">Ver documento</a></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Descripción</h2>
+        <p>Nuestra herramienta utiliza <strong>Inteligencia Artificial  (MediaPipe)</strong> para separar sujetos del fondo . A diferencia de otras aplicaciones, el procesamiento se realiza íntegramente en tu dispositivo, permitiendo una segmentación inteligente que reconoce <strong>rostros, cuerpos completos y prendas de vestir</strong> sin necesidad de subir tus fotos a la nube ni comprometer tu privacidad.</p>
+      </section>
+
+      <section class="card">
+        <h2>Características principales</h2>
+        <ul>
+          <li><strong>Tecnología MediaPipe:</strong> Segmentación  de última generación optimizada para móviles.</li>
+          <li><strong>Selección Inteligente:</strong> Detecta automáticamente siluetas humanas, rostro, cabello.</li>
+          <li><strong>Exportación PNG:</strong> Genera imágenes con transparencia real (canal alfa) listas para diseño.</li>
+          <li><strong>Sin Publicidad:</strong> Una experiencia limpia enfocada en la productividad y el ahorro de tiempo.</li>
+          <li><strong>Seguridad Total:</strong> La IA se ejecuta localmente; tus fotos nunca salen de tu dispositivo ni se recopilan datos.</li>
+        </ul>
+      </section>
+        
+      <section class="card">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item">
+          <strong>¿Es seguro procesar mis fotos con esta app?</strong>
+          <p>Sí, el procesamiento es 100% local. Tus fotos nunca salen de tu dispositivo ni se suben a ningún servidor.</p>
+        </div>
+        <div class="faq-item">
+          <strong>¿Funciona sin conexión a internet?</strong>
+          <p>Totalmente. Una vez instalada, la IA reside en tu teléfono y no necesitas datos ni Wi-Fi para procesar tus imágenes.</p>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="year"></span> YecitDev - Todos los derechos reservados
+      </footer>
+    </div>
+
+    <aside class="supportbar desktop-only">
+      <h3>Apóyanos</h3>
+      <div id="support-links"></div>
+    </aside>
+  </div>
+
+  <script>
+    // 1. CONFIGURACIÓN DE ESTA APP
+    const CURRENT_APP = {
+      nombrePagina: "Removedor de fondo de Personas",
+      nombreApk: "Basic Remove Background",
+	  funcion: "seleccion de personas, silluetas, cabello, rostro",
+      version: "1.0.2",
+      compatibilidad: "Android 10.0 o superior",
+      licencia: "Gratis / Sin Anuncios",
+      permisos: "Almacenamiento",
+      actualizacion: "Enero 2026",
+      privacidad: "https://play.google.com/store/apps/details?id=com.yecitpepe.basicbackground",
+      imagen: "Images/removeBG/person_preview.jpg",
+      url_playstore: "https://play.google.com/store/apps/details?id=com.yecitpepe.basicbackground",
+      descripcion_ia: "Aplicación de segmentación de imágenes con IA local (MediaPipe) para eliminar fondos de personas, ropa y rostros de forma privada."
+    };
+
+    // 2. FUNCIÓN DE RENDERIZADO DINÁMICO
+    function initializePage() {
+      document.getElementById('app-nombre').textContent = CURRENT_APP.nombreApk;
+      document.getElementById('app-nombre-header').textContent = CURRENT_APP.nombrePagina;
+	  document.getElementById('app-funcion').textContent = CURRENT_APP.funcion;
+      document.getElementById('app-version').textContent = CURRENT_APP.version;
+      document.getElementById('app-compatibilidad').textContent = CURRENT_APP.compatibilidad;
+      document.getElementById('app-licencia').textContent = CURRENT_APP.licencia;
+      document.getElementById('app-permisos').textContent = CURRENT_APP.permisos;
+      document.getElementById('app-actualizacion').textContent = CURRENT_APP.actualizacion;
+      document.getElementById('app-privacidad').href = CURRENT_APP.privacidad;
+      document.getElementById('app-imagen').src = CURRENT_APP.imagen;
+      document.getElementById('app-playstore').href = CURRENT_APP.url_playstore;
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      const containers = ['apps-list', 'mobile-apps-list'];
+      containers.forEach(id => {
+        const target = document.getElementById(id);
+        if (!target) return;
+        const ul = document.createElement('ul');
+        SIDEBAR_LINKS.forEach(link => {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = link.url;
+          a.textContent = link.title;
+          if (window.location.pathname.includes(link.url)) a.classList.add('active');
+          li.appendChild(a);
+          ul.appendChild(li);
+        });
+        target.innerHTML = "";
+        target.appendChild(ul);
+      });
+
+      const supportIds = ['support-links', 'mobile-support-links'];
+      supportIds.forEach(id => {
+        const target = document.getElementById(id);
+        if (!target) return;
+        target.innerHTML = "";
+        SUPPORT_LINKS.forEach(support => {
+          const a = document.createElement('a');
+          a.href = support.url;
+          a.target = "_blank";
+          a.rel = "noopener";
+          a.innerHTML = `<span>☕</span> <span>${support.name}</span>`;
+          target.appendChild(a);
+        });
+      });
+
+      const schemaia = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": CURRENT_APP.nombrePagina,
+        "operatingSystem": "Android",
+        "applicationCategory": "MultimediaApplication",
+        "description": CURRENT_APP.descripcion_ia,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      };
+      document.getElementById('schema-ia').textContent = JSON.stringify(schemaia);
+    }
+
+    function setupMobileMenu() {
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileNav = document.getElementById('mobileNav');
+      if (menuToggle && mobileNav) {
+        menuToggle.addEventListener('click', () => {
+          mobileNav.classList.toggle('active');
+          menuToggle.classList.toggle('active');
+          document.body.classList.toggle('menu-open');
+        });
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initializePage();
+      
+      const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "¿Es seguro procesar mis fotos con esta app?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí, el procesamiento es 100% local." }
+        }, {
+          "@type": "Question",
+          "name": "¿Funciona sin conexión a internet?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Totalmente. La IA reside en tu teléfono." }
+        }]
+      };
+      const scriptFaq = document.createElement('script');
+      scriptFaq.type = "application/ld+json";
+      scriptFaq.textContent = JSON.stringify(faqSchema);
+      document.head.appendChild(scriptFaq);
+      
+      setupMobileMenu();
+    });
+  </script>
+</body>
+</html>

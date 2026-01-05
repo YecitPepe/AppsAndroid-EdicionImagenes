@@ -3,12 +3,250 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Apps de edición de imagen - [Tu Marca]</title>
-  <meta name="description" content="Colección de apps de edición de imagen. Descarga o visita en Google Play Store." />
+  <title>YecitDev - Apps Android de Edición de Imagen Sin Anuncios</title>
+  <meta name="description" content="Apps gratuitas para procesar imágenes en Android: sin anuncios y privadas. Desarrolladas por Yecit Luna." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index-styles.css">
+
+  <script src="config.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "YecitDev - Android Image Tools",
+    "author": {
+      "@type": "Person",
+      "name": "Yecit Luna"
+    },
+    "operatingSystem": "Android",
+    "applicationCategory": "MultimediaApplication",
+    "description": "Suite de herramientas de edición de imagen: procesamiento por lotes y remoción de fondo sin anuncios.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
   
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="YecitDev - Herramientas Android de Edición de Imagen" />
+  <meta property="og:description" content="Procesamiento por lotes y edición privada. Gratis y sin anuncios." />
+  <link rel="icon" type="image/png" href="Images/icons/favicon.png">
 </head>
 <body>
- <p>Pagina en Construccion</p>
+  <div class="support-bar" id="supportBar">
+    <div class="support-content">
+      <span>¿Te gusta mi trabajo? ¡Apóyame!</span>
+      <div class="support-links" id="supportLinksDesktop"></div>
+    </div>
+  </div>
+
+  <header class="mobile-header" id="mobileHeader">
+    <div class="brand">
+      <div class="logo">Y|L</div>
+      <div class="brand-text">
+        <h1>Edición Imágenes Android</h1>
+        <p class="lead">Apps por YecitDev</p>
+      </div>
+    </div>
+    <button class="menu-toggle" id="menuToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-menu-content">
+      <div class="mobile-menu-section">
+        <h3>Funciones de edición</h3>
+        <ul id="mobileAppLinks"></ul>
+      </div>
+      <div class="mobile-menu-section">
+        <h3>Menú Principal</h3>
+        <ul>
+          <li><a href="#apps">Ver Apps</a></li>
+          <li><a href="#privacidad">Privacidad</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="mobile-menu-section">
+        <h3>Apóyame</h3>
+        <ul id="supportLinksMobile"></ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" id="mainContainer">
+    <header class="desktop-header">
+      <div class="brand">
+        <div class="logo">Y|L</div>
+        <div>
+          <h1>Android Image Utility Suite</h1>
+          <p class="lead">Herramientas  de procesamiento de imagenes por lotes e individuales.</p>
+        </div>
+      </div>
+      <nav class="desktop-nav">
+        <a class="btn btn-ghost" href="#contact">Contacto</a>
+        <a class="btn btn-ghost" href="#privacidad">Privacidad</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Herramientas  privadas y sin publicidad</h2>
+        <p class="muted">Apps diseñadas para aumentar la eficiencia y ahorrar tiempo 
+		Desarrolladas por <strong>Yecit Luna</strong> para optimizar tu tiempo.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#apps">Explorar Apps</a>
+          <a class="btn btn-ghost" href="https://ko-fi.com/ppluna" target="_blank"  >Apoyar en Ko-fi</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-image">
+          <div class="muted">YecitDev / Studio 2026</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="layout-with-sidebar">
+      <main id="apps">
+        <div class="grid" id="appsGrid"></div>
+
+        <section id="privacidad" class="info-section card">
+          <h4>Compromiso de Privacidad</h4>
+          <p class="muted">Mis aplicaciones operan bajo el principio de <strong>procesamiento local</strong>. Tus fotos nunca salen de tu dispositivo. Sin rastreadores, sin anuncios, solo utilidad.</p>
+        </section>
+        
+        <section class="card">
+          <h2>Preguntas Frecuentes</h2>
+          <div class="faq-item">
+            <strong>¿Por qué tus aplicaciones son gratuitas y sin anuncios?</strong>
+            <p>Creo en el software útil y limpio. Desarrollo estas herramientas para resolver problemas reales; si te sirven, puedes apoyarme mediante una donación voluntaria.</p>
+          </div>
+          <div class="faq-item">
+            <strong>¿Mis fotos están seguras?</strong>
+            <p>Absolutamente. Mis apps no tienen permisos de internet para subir archivos. Todo sucede dentro de tu procesador Android.</p>
+          </div>
+        </section>
+
+        <section id="contact" class="info-section">
+          <h4>Contacto</h4>
+          <p class="muted">Email: pplunavelasco@gmail.com</p>
+        </section>
+      </main>
+
+      <aside class="sidebar" id="sidebar">
+        <h3>Acceso Rápido</h3>
+        <ul class="sidebar-list" id="desktopAppLinks"></ul>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="year"></span> YecitDev. Todas las apps son propiedad de Yecit Luna.
+    </footer>
+  </div>
+
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="modal-box">
+      <div class="modal-header">
+        <strong>Capturas de Pantalla</strong>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="screens" id="screens"></div>
+    </div>
+  </div>
+
+  <script>
+    // DATOS DE LAS APPS (Corregidos)
+    const APPS_DATA = [
+      {
+        id: "batchresize",
+        title: "Batch Image Resizer",
+        description: "Redimensiona, recorta y gira cientos de imágenes simultáneamente.",
+        thumbnail: "Images/BatchImageReziser.png",
+        badges: ["Android", "No ADS", "Offline"],
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.YecitPepe.batchmultireziseimages",
+        screenshots: ["Images/resize/resize (1) (Phone).jpg", "Images/resize/resize (2) (Phone).jpg", "Images/resize/rotate_preview.jpg"]
+      },
+      {
+        id: "background",
+        title: "Basic Remove Background",
+        description: "Elimina fondos automáticamente con IA local. Rápido y privado.",
+        thumbnail: "Images/removeBackground.jpg",
+        badges: ["Android", "IA", "Offline"],
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.yecitpepe.basicbackground",
+        screenshots: ["Images/removeBG/Img0.jpg", "Images/removeBG/Img1.jpg", "Images/removeBG/person_preview.jpg"]
+      }
+    ];
+
+    function renderApps() {
+      const grid = document.getElementById('appsGrid');
+      grid.innerHTML = APPS_DATA.map(app => `
+        <section id="${app.id}" class="app-section">
+          <article class="card">
+            <div class="thumb"><img src="${app.thumbnail}" alt="${app.title}" loading="lazy"></div>
+            <h3>${app.title}</h3>
+            <p class="meta">${app.description}</p>
+            <div class="badges">${app.badges.map(b => `<span class="badge">${b}</span>`).join('')}</div>
+            <div class="actions">
+              <a class="btn btn-primary" href="${app.playStoreUrl}" target="_blank">Google Play</a>
+              <button class="btn btn-ghost" onclick='openModal(${JSON.stringify(app.screenshots)})'>Capturas</button>
+            </div>
+          </article>
+        </section>
+      `).join('');
+    }
+
+    function renderSidebarAndSupport() {
+      const desktopList = document.getElementById('desktopAppLinks');
+      const mobileList = document.getElementById('mobileAppLinks');
+      
+      // Renderizar Links desde config.js
+      const linksHtml = SIDEBAR_LINKS.map(link => `<li><a href="${link.url}">${link.title}</a></li>`).join('');
+      desktopList.innerHTML = linksHtml;
+      mobileList.innerHTML = linksHtml;
+
+      // Renderizar Soporte (CORREGIDO link.icon)
+      const supportHtml = SUPPORT_LINKS.map(link => {
+        const icon = link.name.includes('Ko-fi') ? '☕' : '❤️';
+        return `<a href="${link.url}" target="_blank" class="support-link"><span>${icon}</span> ${link.name}</a>`;
+      }).join('');
+      document.getElementById('supportLinksDesktop').innerHTML = supportHtml;
+      
+      const mobileSupportHtml = SUPPORT_LINKS.map(link => `<li><a href="${link.url}" target="_blank">${link.name}</a></li>`).join('');
+      document.getElementById('supportLinksMobile').innerHTML = mobileSupportHtml;
+    }
+
+    function openModal(imgs) {
+      const container = document.getElementById('screens');
+      container.innerHTML = imgs.map(src => `<img src="${src}" alt="Screenshot">`).join('');
+      document.getElementById('modal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(e) {
+      if (e.target.id === 'modal' || e.target.className === 'modal-close') {
+        document.getElementById('modal').classList.remove('open');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    function setupMobileMenu() {
+      const btn = document.getElementById('menuToggle');
+      const nav = document.getElementById('mobileNav');
+      btn.onclick = () => {
+        nav.classList.toggle('active');
+        btn.classList.toggle('active');
+      };
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('year').textContent = new Date().getFullYear();
+      renderApps();
+      renderSidebarAndSupport();
+      setupMobileMenu();
+    });
+  </script>
 </body>
 </html>
-
