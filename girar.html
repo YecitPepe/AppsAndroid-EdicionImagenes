@@ -194,7 +194,17 @@
           a.href = support.url;
           a.target = "_blank";
           a.rel = "noopener";
-          a.innerHTML = `<span>☕</span> <span>${support.name}</span>`;
+			
+          // LOGICA DE ICONO DINAMICO
+			let icon = '❤️'; // Icono por defecto
+			if (support.name.toLowerCase().includes('ko-fi')) {
+				icon = '☕';
+			} else if (support.name.toLowerCase() === 'x' || support.name.toLowerCase().includes('twitter')) {
+				icon = '𝕏';
+			}
+          
+			a.innerHTML = `<span>${icon}</span> <span>${support.name}</span>`;
+			
           target.appendChild(a);
         });
       });
@@ -231,3 +241,4 @@
 </body>
 
 </html>
+
