@@ -7,5 +7,6 @@ const SIDEBAR_LINKS = [
 ];
 
 const SUPPORT_LINKS = [
-  { name: "Ko-fi", url: "https://ko-fi.com/ppluna", icon: "kofi" }
+  { name: "Ko-fi", url: "https://ko-fi.com/ppluna", icon: "kofi" },
+  { name: "X", url: "https://x.com/PpLunavelasco", icon: "x" }
 ];
