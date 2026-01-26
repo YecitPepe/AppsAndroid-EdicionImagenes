@@ -235,7 +235,11 @@
 
       // Renderizar Soporte (CORREGIDO link.icon)
       const supportHtml = SUPPORT_LINKS.map(link => {
-        const icon = link.name.includes('Ko-fi') ? '☕' : '❤️';
+		  
+        let icon = '❤️'; // Icono por defecto
+		if (link.name.includes('Ko-fi')) icon = '☕';
+		if (link.name.toLowerCase().includes('x') || link.icon === 'x') icon = '𝕏'; // Icono para X
+		  
         return `<a href="${link.url}" target="_blank" class="support-link"><span>${icon}</span> ${link.name}</a>`;
       }).join('');
       document.getElementById('supportLinksDesktop').innerHTML = supportHtml;
@@ -277,5 +281,6 @@
 </body>
 
 </html>
+
 
 
