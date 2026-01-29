@@ -2,6 +2,7 @@
 
 ¡Bienvenido a la suite de edición de imágenes más rápida y privada para Android!  
 Todas mis herramientas funcionan **100% Offline** y están optimizadas para el procesamiento por lotes la mayoria.
+Gratuitas y sin anuncios.
 
 ---
 
@@ -29,15 +30,28 @@ Ahorra horas de trabajo procesando cientos de imágenes simultáneamente.
 
 ---
 
+###  Marca de agua texto y logo (Batch)
+Agrega marcas de agua por lotes a imagenes
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/094b3f20-fa5d-4056-8fdd-8df6fe59ed65" width="350">
+</p>
+<a href="https://play.google.com/store/apps/details?id=com.yecitpepe.batchwatermark">
+  <img src="https://img.shields.io/badge/Descargar_en_Google_Play-410093?style=for-the-badge&logo=google-play&logoColor=white">
+</a>
+
+---
+
 ## 🚀 Próximamente
-- [ ] **Marca de Agua (Watermark)**
+- [ ] **Funciones comunes por Lotes**
 - [ ] **Binarización e Inversión de Color**
+- [ ] **Texto Titulos como photoshop**
 
 ## ☕ Apoyo y Contacto
 Si este proyecto te es útil, puedes apoyarme aquí:
 
 [![Ko-Fi](https://img.shields.io/badge/Invítame_un_café-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/ppluna)
 [![X](https://img.shields.io/badge/Sígueme_en_X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/PpLunavelasco)
+
 
 ---
 [Visita nuestra Web Oficial](https://yecitpepe.github.io/AppsAndroid-EdicionImagenes/)
