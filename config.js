@@ -3,7 +3,9 @@ const SIDEBAR_LINKS = [
   { title: "Giro Por Lotes", url: "girar.html" },
   { title: "Recorte Aspecto Por Lotes", url: "recorteaspect.html" },
   { title: "Removedor fondo Personas", url: "backgroundperson.html" },
-  { title: "Removedor fondo Objetos", url: "background.html" }
+  { title: "Removedor fondo Objetos", url: "background.html" },
+  { title: "Marca de agua (Texto)",url: "watermark-texto.html"},
+  { title: "Marca de agua (Logo)",url: "watermark-logo.html"}
 ];
 
 const SUPPORT_LINKS = [
