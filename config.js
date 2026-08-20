@@ -1,4 +1,5 @@
 const SIDEBAR_LINKS = [
+  { title: "Cat-Batch", url: "catbatch.html" },
   { title: "Redimension Por Lotes", url: "redimension.html" },
   { title: "Giro Por Lotes", url: "girar.html" },
   { title: "Recorte Aspecto Por Lotes", url: "recorteaspect.html" },

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cat-Batch editor de imagenes por lotes | YecitDev Android</title>
+  <meta name="description" content="aplicacion android para editar imagenes por lotes privado con opciones de fusion fusiona recorta divide y mas facil de usar." />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="config.js"></script>
+
+  <link rel="canonical" href="https://yecitpepe.github.io/AppsAndroid-EdicionImagenes/backgroundperson.html" />
+  <link rel="icon" type="image/png" href="Images/icons/favicon.png">
+
+  <meta property="og:site_name" content="YecitDev" />
+  <meta property="og:title" content="Editor de imagenes por lotes - YecitDev" />
+  <meta property="og:url" content="https://yecitpepe.github.io/AppsAndroid-EdicionImagenes/catbatch.html" />
+  <meta property="og:type" content="website" />
+  <meta name="application-name" content="YecitDev">
+  <meta name="apple-mobile-web-app-title" content="YecitDev">
+	
+  <script type="application/ld+json" id="schema-ia"></script>
+	
+  <meta name="google-site-verification" content="b_7250ROjgIEqMqmuJEz2dWozzRBhQZfng6bVHH3wDo" />
+</head>
+<body>
+  <header class="mobile-header" id="mobileHeader">
+    <div class="mobile-title">
+      <h1 id="mobile-app-title">Cat-Batch editor de imagenes por lotes</h1>
+      <p class="lead">procesa imagenes por lotes de manera rapida y facil</p>
+    </div>
+    <button class="menu-toggle" id="menuToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-menu-content">
+      <div class="mobile-menu-section">
+        <h3>Menú Principal</h3>
+        <ul>
+          <li><a href="index.html">Página principal</a></li>
+        </ul>
+      </div>
+      
+      <div class="mobile-menu-section">
+        <h3>Otras aplicaciones</h3>
+        <div id="mobile-apps-list"></div>
+      </div>
+      
+      <div class="mobile-support-section">
+        <h3>Apóyanos</h3>
+        <div id="mobile-support-links"></div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-container" id="mainContainer">
+    <aside class="sidebar desktop-only">
+      <h3>Menú Principal</h3>
+      <ul>
+        <li><a href="index.html">Página principal</a></li>
+      </ul>
+      <h3>Otras aplicaciones</h3>
+      <div id="apps-list"></div>
+    </aside>
+
+    <div class="main-content">
+      <div class="desktop-header desktop-only">
+        <div class="header-content">
+          <h1><span id="app-nombre-header">Cat-Batch</span> <span class="gradient-text">APK Android</span></h1>
+          <p class="lead">procesa imagenes por lotes de manera rapida y facil aplica redimensiones, recortes, marca de agua, fusiones, divisiones, etc. </p>
+        </div>
+        <a href="mailto:pplunavelasco@gmail.com" title="Contacto" class="contact-btn">
+          <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'></path><polyline points='22,6 12,13 2,6'></polyline></svg>
+        </a>
+      </div>
+
+      <section class="card app-showcase">
+        <img id="app-imagen" src="" alt="App Preview" class="hero">
+        <div class="download-section">
+          <a id="app-playstore" class="btn" href="#" target="_blank" rel="noopener">
+            📱 Descargar en Google Play
+          </a>
+        </div>
+        <ul class="details-list" style="margin-top:24px;">
+          <li><strong>Nombre APK:</strong> <span id="app-nombre"></span></li>
+		  <li><strong>Funcion:</strong> <span id="app-funcion"></span></li>
+          <li><strong>Versión:</strong> <span id="app-version"></span></li>
+          <li><strong>Compatibilidad:</strong> <span id="app-compatibilidad"></span></li>
+          <li><strong>Licencia:</strong> <span id="app-licencia"></span></li>
+          <li><strong>Permisos:</strong> <span id="app-permisos"></span></li>
+          <li><strong>Última actualización:</strong> <span id="app-actualizacion"></span></li>
+          <li><strong>Política de privacidad:</strong> <a id="app-privacidad" target="_blank" rel="noopener">Ver documento</a></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Descripción</h2>
+        <p>
+          Cat-Batch es una aplicación de edición de imágenes por lotes que permite procesar múltiples fotos al mismo tiempo, aplicando diversas transformaciones como redimensiones, recortes, marcas de agua y mucho más. Es ideal para profesionales que necesitan optimizar su flujo de trabajo con imágenes es offline asi que las imagenes no se suben a servidores todo el trabajo depende del dispositivo.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Características principales</h2>
+        <ul>
+          <li><strong>selecciona multiples imagenes :</strong> procesa todas a la vez no importa si son de diferentes dimensiones.</li>
+          <li><strong>lista de funciones basicas:</strong> redimension, recorte, giro, cambio de formato ,fondo lienzo, fusion de imagenes en cuadricula , separacionde imagenes.</li>
+          <li><strong>lista de funciones de marca de agua:</strong> Administrador de fuentes personalizadas , marca de agua de texto ,marca de agua de logo, leyenda de texto.</li>
+          <li><strong>lista de funciones con efectos de fusion:</strong> Blanco y negro, posterizar ,invertircolores,desenfoque ,enfoque,binarizacion , curvas lut,sombras y luces, fusion con color, modificacion de espacios de color, tinte , brillo/contraste , temperatura, reduccion de color, intensidad,  niveles, balance de blancos, claridad .</li>
+          <li><strong>lista de funciones de efectos de prueba:</strong> Mapa de degradado, patrones lut, semito(Halftone), tramado dithering, reemplazo de paletta de colores.</li>
+          <li><strong>Opcion es de fusion:</strong> ya sea multiplicar, restar, dividir, etc.</li>
+          <li><strong>Exportación:</strong> Guarda las imágenes procesadas en tu dispositivo en el formato a eleccion con nombre y carpeta especifico.</li>
+          <li><strong>Seguridad Total:</strong> Todo el proceso se realiza dentro del dispositivo.</li>
+        </ul>
+      </section>
+        
+      <section class="card">
+        <h2>Notas de la App</h2>
+        <div class="faq-item">
+          <strong>¿Es seguro procesar mis fotos con esta app?</strong>
+          <p>Sí, el procesamiento es 100% local. Tus fotos nunca salen de tu dispositivo ni se suben a ningún servidor.</p>
+        </div>
+        <div class="faq-item">
+          <strong>¿Funciona sin conexión a internet?</strong>
+          <p>Totalmente. Una vez instalada, reside en tu teléfono y no necesitas datos ni Wi-Fi para procesar tus imágenes.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Pedir efectos funciones concretas</strong>
+          <p>Si tienes alguna solicitud específica sobre efectos o funciones que te gustaría ver en la app, no dudes en contactarnos o dejar un comentario en la app.</p>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="year"></span> YecitDev - Todos los derechos reservados
+      </footer>
+    </div>
+
+    <aside class="supportbar desktop-only">
+      <h3>Apóyanos</h3>
+      <div id="support-links"></div>
+    </aside>
+  </div>
+
+  <script>
+    // 1. CONFIGURACIÓN DE ESTA APP
+    const CURRENT_APP = {
+      nombrePagina: "Cat-Batch editor de imagenes por lotes",
+      nombreApk: "Cat-Batch",
+	  funcion: "Editor de imagenes por lotes con opciones de fusion, recorte, redimension, marca de agua y mas.",
+      version: "1.0.2",
+      compatibilidad: "Android 13.0 o superior",
+      licencia: "Gratis ",
+      permisos: "Almacenamiento",
+      actualizacion: "agosto 2026",
+      privacidad: "https://play.google.com/store/apps/details?id=com.yecitpepe.catbatch&hl=es_BO",
+      imagen: "Images/catBatch/unnamed.jpg",
+      url_playstore: "https://play.google.com/store/apps/details?id=com.yecitpepe.catbatch&hl=es_BO",
+      descripcion_ia: "Aplicacion para editar imagenes por lotes privado con opciones de fusion, redimensiona , recorta , marca de agua, blanco y negro, binarizacion, luces y sombras, halftone, dithering, modificacion por espacio de color ,etc."
+    };
+
+    // 2. FUNCIÓN DE RENDERIZADO DINÁMICO
+    function initializePage() {
+      document.getElementById('app-nombre').textContent = CURRENT_APP.nombreApk;
+      document.getElementById('app-nombre-header').textContent = CURRENT_APP.nombrePagina;
+	  document.getElementById('app-funcion').textContent = CURRENT_APP.funcion;
+      document.getElementById('app-version').textContent = CURRENT_APP.version;
+      document.getElementById('app-compatibilidad').textContent = CURRENT_APP.compatibilidad;
+      document.getElementById('app-licencia').textContent = CURRENT_APP.licencia;
+      document.getElementById('app-permisos').textContent = CURRENT_APP.permisos;
+      document.getElementById('app-actualizacion').textContent = CURRENT_APP.actualizacion;
+      document.getElementById('app-privacidad').href = CURRENT_APP.privacidad;
+      document.getElementById('app-imagen').src = CURRENT_APP.imagen;
+      document.getElementById('app-playstore').href = CURRENT_APP.url_playstore;
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      const containers = ['apps-list', 'mobile-apps-list'];
+      containers.forEach(id => {
+        const target = document.getElementById(id);
+        if (!target) return;
+        const ul = document.createElement('ul');
+        SIDEBAR_LINKS.forEach(link => {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = link.url;
+          a.textContent = link.title;
+          if (window.location.pathname.includes(link.url)) a.classList.add('active');
+          li.appendChild(a);
+          ul.appendChild(li);
+        });
+        target.innerHTML = "";
+        target.appendChild(ul);
+      });
+
+      const supportIds = ['support-links', 'mobile-support-links'];
+      supportIds.forEach(id => {
+        const target = document.getElementById(id);
+        if (!target) return;
+        target.innerHTML = "";
+        SUPPORT_LINKS.forEach(support => {
+          const a = document.createElement('a');
+          a.href = support.url;
+          a.target = "_blank";
+          a.rel = "noopener";
+			
+          // LOGICA DE ICONO DINAMICO
+			let icon = '❤️'; // Icono por defecto
+			if (support.name.toLowerCase().includes('ko-fi')) {
+				icon = '☕';
+			} else if (support.name.toLowerCase() === 'x' || support.name.toLowerCase().includes('twitter')) {
+				icon = '𝕏';
+			}
+          
+			a.innerHTML = `<span>${icon}</span> <span>${support.name}</span>`;
+			
+          target.appendChild(a);
+        });
+      });
+
+      const schemaia = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": CURRENT_APP.nombrePagina,
+        "operatingSystem": "Android",
+        "applicationCategory": "MultimediaApplication",
+        "description": CURRENT_APP.descripcion_ia,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      };
+      document.getElementById('schema-ia').textContent = JSON.stringify(schemaia);
+    }
+
+    function setupMobileMenu() {
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileNav = document.getElementById('mobileNav');
+      if (menuToggle && mobileNav) {
+        menuToggle.addEventListener('click', () => {
+          mobileNav.classList.toggle('active');
+          menuToggle.classList.toggle('active');
+          document.body.classList.toggle('menu-open');
+        });
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initializePage();
+      
+      const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "¿Es seguro procesar mis fotos con esta app?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí, el procesamiento es 100% local." }
+        }, {
+          "@type": "Question",
+          "name": "¿Funciona sin conexión a internet?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Totalmente. reside en tu teléfono." }
+        }]
+      };
+      const scriptFaq = document.createElement('script');
+      scriptFaq.type = "application/ld+json";
+      scriptFaq.textContent = JSON.stringify(faqSchema);
+      document.head.appendChild(scriptFaq);
+      
+      setupMobileMenu();
+    });
+  </script>
+</body>
+
+</html>
+
